@@ -1,9 +1,9 @@
-.home{
-.feature{
+.dark{
     display: flex;
-    background: #f1fdf7;
+    background: #0d084d;
     justify-content: center;
     padding: 100px 0;
+    color: #ffffff;
     .container{
         width: 1400px;
         display: flex;
@@ -18,34 +18,45 @@
             h1{
                 font-weight: 500;
                 margin-bottom: 10px;
+                 font-weight: 500;
+                i{
+                    font-weight: 300;
+                }
             }
             p{
-                font-size: 18px;
-                font-weight: 300;
-                line-height: 28px;
-                letter-spacing: 1px;
-                color: #999898;
+               margin-bottom: 20px;
+               
             }
             .title{
                 display: flex;
                 align-items: center;
                 gap: 10px;
-                font-size: 18px;
-                font-weight: 500;
+                font-size: 14px;
+                font-weight:300;
                img{
                 width: 24px;
                 height: 24px;
                } 
+            }
+
+            button{
+                background: #1dff73;
+                padding: 10px 20px;
+                width: max-content;
+                border: 5px;
+                margin-top: 20px;
+                color: #ffffff;
+                font-size: 16px;
+                
             }
            
            
         }
         .right{
             flex: 3;
-             video{
-             width: 720px;
+            img{
+             width: 100%;
             }
         }
     }
-}
 }

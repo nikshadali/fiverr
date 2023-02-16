@@ -1,0 +1,17 @@
+.trestby{
+    display: flex;
+    justify-content: center;
+    background: #fafafa;
+    height: 100px;
+    .container{
+        display: flex;
+        align-items: center;
+        max-width: 740px;
+        gap: 20px;
+        color: rgb(200,200,200);
+        img{
+            height: 50px;
+            object-fit: contain;
+        }
+    }
+}
