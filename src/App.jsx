@@ -8,7 +8,9 @@ import Gigs from './pages/gigs/Gigs';
 import Messages from './pages/messages/Messages';
 import {createBrowserRouter,RouterProvider, Outlet} from "react-router-dom";
 import './App.scss'
-  
+import MyGig from './pages/mygig/MyGig';
+import Orders from './pages/orders/Orders';
+  import Message from './pages/message/Message';
 
 
 
@@ -36,20 +38,32 @@ function App() {
           element:<Home/>
         },
         {
-          path:'/gig',
+          path:'/gig/:id',
           element:<Gig/>
         },
         {
-          path:'gigs',
+          path:'gigs/:id',
           element:<Gigs/>
         },
         {
-          path:'/message',
+          path:'/messages',
           element:<Messages/>
         },
         {
           path:'/add',
           element:<Add/>
+        },
+        {
+          path:'/mygig',
+          element:<MyGig/>
+        },
+        {
+          path:'/orders',
+          element:<Orders/>
+        },
+        {
+          path:'/message/:id',
+          element:<Message/>
         },
       ]
     }

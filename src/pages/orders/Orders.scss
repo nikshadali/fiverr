@@ -1,4 +1,4 @@
-.messages{
+.orders{
     display: flex;
     justify-content: center;
 
@@ -10,7 +10,16 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-           
+            button{
+                background: #1dbf73;
+                color: #fff;
+                font-weight: 500;
+                border: none;
+                padding: 10px;
+                border-radius: 5px;
+                cursor: pointer;
+
+            }
            
         }
         table{
@@ -37,16 +46,8 @@
                         width: 20px;
                         cursor: pointer;
                     }
-                   button{ background: #1dbf73;
-                    color: #fff;
-                    font-weight: 500;
-                    border: none;
-                    padding: 10px;
-                    border-radius: 5px;
-                    cursor: pointer;
-                   }
                 }
-                &.active{
+                &:nth-child(even){
                     background: #1dff730f;
                 }
             }

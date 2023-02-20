@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom'
 import './Nav.scss'
 
 const Nav = () => {
+  
    const [active, setActive] = useState(false)
    const [open, setOpen] = useState(false)
    const{pathname}= useLocation()
@@ -41,12 +42,12 @@ const Nav = () => {
                        {open && <div className="options">
                             {currentUser.isSeller && (
                                 <>
-                                <span>Gigs</span>
+                                <span><Link to='/mygig' className='link'>Gigs</Link></span>
                                 <span>Add New Gig</span>
                                 </>
                             )}
-                            <span>Order</span>
-                            <span>Messages</span>
+                            <span><Link to='/orders' className='link'>Orders</Link></span>
+                            <span><Link to='/messages' className='link'>Messages</Link></span>
                             <span>Logout</span>
                         </div>
 }
