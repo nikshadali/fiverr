@@ -65,6 +65,10 @@ function App() {
           path:'/message/:id',
           element:<Message/>
         },
+        {
+          path:'/add',
+          element:<Add/>
+        },
       ]
     }
   ])

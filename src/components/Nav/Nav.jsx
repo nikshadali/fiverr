@@ -43,7 +43,7 @@ const Nav = () => {
                             {currentUser.isSeller && (
                                 <>
                                 <span><Link to='/mygig' className='link'>Gigs</Link></span>
-                                <span>Add New Gig</span>
+                                <span><Link to='/add' className='link'>Add New Gig</Link></span>
                                 </>
                             )}
                             <span><Link to='/orders' className='link'>Orders</Link></span>
